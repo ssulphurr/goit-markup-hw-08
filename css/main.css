@@ -192,7 +192,7 @@ body {
   top: 44px;
 }
 
-.icon__box {
+.icon__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -535,7 +535,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.qualities__box {
+.qualities__list {
   display: flex;
   justify-content: space-between;
 }
@@ -556,7 +556,7 @@ body {
   height: 70px;
 }
 
-.whatwedo {
+.whatwedo__list{
   display: flex;
 }
 .whatwedo__item {
@@ -582,7 +582,7 @@ body {
   color: #ffffff;
 }
 
-.team__box {
+.team__list {
   display: flex;
   gap: 30px;
 }
@@ -626,7 +626,7 @@ body {
   fill: #ffffff;
 }
 
-.clients__box {
+.clients__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -648,7 +648,7 @@ body {
   padding-bottom: 60px;
 }
 
-.footer__box {
+.footer__list {
   display: flex;
   flex-direction: column;
   gap: 9px;
