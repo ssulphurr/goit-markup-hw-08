@@ -15,17 +15,24 @@
 }
 .footer-flex {
     display: flex;
-    align-items: baseline;
+    
+    align-items: center;
     justify-content: space-between;
+
+    flex-direction: column;
+    gap: 60px;
 }
 
 .footer__contacts {
     display: block;
     width: 231px;
+
+    text-align: center;
 }
 
 .join {
     width: 206px;
+    text-align: center;
 }
 
 .join__text{
@@ -54,4 +61,22 @@
     width: 20px;
     height: 20px;
     fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-flex {
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .footer__contacts, .join, .mailing{
+        text-align: start;
+    }
 }

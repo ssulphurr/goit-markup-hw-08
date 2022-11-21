@@ -1,5 +1,5 @@
 .container {
-    width: 1200px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -8,4 +8,10 @@
 
 .container h3 {
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1170px;
+    }
 }

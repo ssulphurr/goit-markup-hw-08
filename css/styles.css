@@ -318,7 +318,7 @@ footer .link {
 }
 
 /* what we do */
-.whatwedo__list{
+.whatwedo {
   display: flex;
 }
 .whatwedo__item:not(:last-child) {

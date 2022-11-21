@@ -1,14 +1,20 @@
 .team {
     &__list {
         display: flex;
+        flex-direction: column;
         gap: 30px;
     }
     &__item {
-        width: 270px;
+        min-width: 450px;
         background-color: #ffffff;
         border-radius: 0 0 4px 4px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
     }
     &__member {
         padding: 30px;
@@ -46,4 +52,33 @@
 .icon__link:hover .team__icon,
 .icon__link:focus .team__icon {
     fill: #ffffff;
+}
+
+
+@media screen and (min-width: 768px) {
+    .team {
+        &__list {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        &__item {
+            min-width: 354px;
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        &__list {
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        &__item {
+            min-width: 270px;
+            flex-basis: calc((100% - 30px) / 4);
+        }
+    }
 }
