@@ -1,0 +1,47 @@
+.modal {
+    width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(1);
+
+    transition: transform 250ms linear;
+
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.data-modal-close {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.modal-close {
+    width: 11px;
+    height: 11px;
+}
+

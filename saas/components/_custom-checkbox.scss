@@ -1,0 +1,24 @@
+.modal-icon {
+    width: 11px;
+    height: 8px;
+}
+
+.modal-icon-span {
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+
+    fill: transparent;
+    border: 2px solid rgba(33, 33, 33, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.input-checkbox:checked+.modal-icon-span {
+    fill: #ffffff;
+    background-color: var(--color-blue);
+    border-color: transparent;
+}
