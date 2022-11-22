@@ -37,7 +37,7 @@
             <li><a class="link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list nav-line__pages-box">
+        <ul class="list nav-line__pages-box nav__contacts">
           <li>
             <a class="link nav-line__contacts" href="mailto:info@example.com">
               <svg class="envelope-icon">
@@ -55,6 +55,47 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="menu-open-icon">
+            <use href="./images/icons.svg#icon-mob-open"></use>
+          </svg>
+        </button>
+
+        <div class="mob__menu is-hidden" data-menu>
+          <div class="mob__container">
+          <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="menu-close-icon">
+              <use href="./images/icons.svg#icon-mob-close"></use>
+            </svg>
+          </button>
+
+          <ul class="list mob__list">
+            <li><a class="link link--opened-page mob__page" href="">Cтудія</a></li>
+            <li><a class="link mob__page" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="link mob__page" href="#contacts">Контакти</a></li>
+          </ul>
+          <div class="mob__contacts">
+          <ul class="list mob__list">
+            <li>
+              <a class="link mob__tel" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+            <li>
+              <a class="link mob__email" href="mailto:info@example.com">
+                info@devstudio.com</a>
+            </li>
+            </ul>
+            
+            <ul class="list mob__soc__list">
+              <li><a class="link" href="">Instagram</a></li>
+              <li><a class="link" href="">Twitter</a></li>
+              <li><a class="link" href="">Facebook</a></li>
+              <li><a class="link" href="">Linkenin</a></li>
+            </ul>
+            </div>
+        </div>
+
       </div>
     </header>
 
@@ -230,6 +271,9 @@
                 alt="Микола Тарасов - Marketing"
                 width="270"
               />
+              <!-- <picture>
+                <source srcset="./images/section4/img_tarasov.jpg 1x, ./images/section4/img_tarasov-2x.jpg"/>
+              </picture> -->
               <div class="team__member">
                 <h3 class="team__member__name">Микола Тарасов</h3>
                 <p class="team__member__description" lang="en">Marketing</p>
@@ -481,5 +525,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .section {
     &-positioning {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     &--dark {
@@ -23,6 +23,14 @@
     }
 }
 
-.qualities.section-positioning {
-    padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+    .section-positioning{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
+    .qualities.section-positioning {
+            padding-bottom: 0;
+        }
 }
+
