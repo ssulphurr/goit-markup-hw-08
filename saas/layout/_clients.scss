@@ -11,6 +11,13 @@
   &__item {
     width: 210px;
     height: 92px;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
   &__icon {
     width: 106px;

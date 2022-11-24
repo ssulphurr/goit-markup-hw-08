@@ -15,8 +15,15 @@
 }
 
 .nav-line__logo-font {
-  flex-basis: 145px;
-  margin-right: 93px;
+  flex-basis: 145px;  
+
+  @media screen and (min-width: 768px) {
+      margin-right: 87px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-right: 92px;
+    }
 }
 
 .nav-line__pages-box {
@@ -154,4 +161,32 @@
   display: flex;
   gap: 20px;
   color: var(--color-blue);
+}
+.mob__soc__item {
+  position: relative;
+}
+
+.mob__soc__item:nth-child(1)::after{
+  content: '';
+  position: absolute;
+  left: 77px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+.mob__soc__item:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  left: 56px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+.mob__soc__item:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  left: 73px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
 }
